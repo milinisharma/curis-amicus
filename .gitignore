@@ -1,6 +1,4 @@
-
 .classpath
 .settings/*
-/target/*
-curis-amicus-server/.classpath
-*.prefs
+target/*
+curis-amicus-server/target/*

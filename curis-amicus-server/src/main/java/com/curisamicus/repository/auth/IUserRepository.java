@@ -1,13 +1,15 @@
 package com.curisamicus.repository.auth;
 
-import java.util.concurrent.ExecutionException;
+import java.util.List;
 
-import com.curisamicus.domain.auth.User;
+import com.curisamicus.domain.User;
 
 public interface IUserRepository {
 	
-	public User findByUsername(String username) throws InterruptedException, ExecutionException;
+	public List<User> findAll();
 	
-	public String registerUser(User user) throws InterruptedException, ExecutionException;
+	public User findByUsername(String username);
+	
+	public User registerUser(User user);
 
 }

@@ -1,9 +1,0 @@
-com\curisamicus\repository\auth\impl\UserRepositoryImpl.class
-com\curisamicus\service\auth\impl\LoginServiceImpl.class
-com\curisamicus\domain\auth\User$UserBuilder.class
-com\curisamicus\controller\auth\LoginRestService.class
-com\curisamicus\domain\auth\User.class
-com\curisamicus\repository\auth\IUserRepository.class
-com\curisamicus\config\MongoDBConfig.class
-com\curisamicus\service\auth\ILoginService.class
-com\curisamicus\Application.class
