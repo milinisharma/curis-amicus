@@ -1,0 +1,6 @@
+
+.classpath
+.settings/*
+/target/*
+curis-amicus-server/.classpath
+*.prefs
