@@ -1,6 +1,12 @@
 package com.curisamicus.domain;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -24,10 +30,10 @@ public class User {
 	@Id
 	private String id;
 	
-	@Getter @Setter @Indexed
+	@Getter @Setter @Indexed @NotBlank @Size(max = 20)
 	private String username;
 	
-	@Getter @Setter
+	@Getter @Setter @NotBlank @Size(max = 120)
 	private String password;
 	
 	@Getter @Setter
@@ -48,7 +54,7 @@ public class User {
 	@Getter @Setter @DBRef(lazy = true)
 	private Address address;
 	
-	@Getter @Setter @Indexed
+	@Getter @Setter @Indexed @NotBlank @Size(max = 50) @Email
 	private String email;
 	
 	@Getter @Setter 
@@ -56,4 +62,7 @@ public class User {
 	
 	@Getter @Setter
 	private Integer age;
+	
+	@DBRef @Builder.Default
+	private Set<Role> roles = new HashSet<>();
 }
