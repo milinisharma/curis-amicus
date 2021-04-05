@@ -1,4 +1,6 @@
 .classpath
-.settings/*
-target/*
-curis-amicus-server/target/*
+.settings/
+curis-amicus-server/target/
+curis-amicus-web/src/main/web/
+curis-amicus-web/target/
+curis-amicus-web/node_modules/
